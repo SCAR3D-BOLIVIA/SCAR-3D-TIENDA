@@ -1,6 +1,6 @@
 -- SCAR 3D: esquema inicial para Supabase (PostgreSQL)
 -- Ejecutar en Supabase > SQL Editor, después de crear el proyecto.
--- Administrador único autorizado: rufranz.chiqui@gmail.com
+-- Administrador único autorizado: rufranz.chiqui28@gmail.com
 
 create extension if not exists pgcrypto;
 
@@ -13,7 +13,7 @@ stable
 security invoker
 set search_path = ''
 as $$
-  select coalesce((auth.jwt() ->> 'email') = 'rufranz.chiqui@gmail.com', false);
+  select coalesce((auth.jwt() ->> 'email') = 'rufranz.chiqui28@gmail.com', false);
 $$;
 
 create table if not exists public.products (
@@ -31,7 +31,7 @@ create table if not exists public.products (
 create table if not exists public.store_contacts (
   id integer primary key default 1 check (id = 1),
   whatsapp text not null default '59177748285',
-  email text not null default 'rufranz.chiqui@gmail.com',
+  email text not null default 'rufranz.chiqui28@gmail.com',
   address text not null default 'La Paz - El Alto, Bolivia',
   social_url text not null default '',
   updated_at timestamptz not null default now()

@@ -62,7 +62,7 @@
 <div id="cartModal" class="modal-bg hidden"><div class="modal"><div class="modal-head"><h2>Detalle de tu pedido</h2><button id="cartClose" class="btn secondary">Cerrar</button></div><div id="cartLines" class="cart-lines"></div><div style="display:flex;justify-content:space-between;align-items:center;margin:20px 0"><b>Total estimado</b><span id="cartTotal" class="total">Bs 0,00</span></div><p class="tiny">El total es referencial. El envío y productos personalizados pueden requerir confirmación.</p><div class="field"><label>Nombre del cliente</label><input id="buyerName" placeholder="Tu nombre"></div><div class="field"><label>Teléfono / WhatsApp</label><input id="buyerPhone" type="tel" placeholder="591... (opcional)"></div><div class="field"><label>Correo electrónico (opcional)</label><input id="buyerEmail" type="email" placeholder="tu correo"></div><div class="field"><label>Observaciones (opcional)</label><textarea id="buyerNote" placeholder="Color, tamaño, entrega..."></textarea></div><button id="checkout" class="btn primary">Enviar pedido completo por WhatsApp</button></div></div>
 <div id="toast" class="toast"></div>
 <script>
-const WHATSAPP_DEFAULT='59177748285', ADMIN_EMAIL='rufranz.chiqu28@gmail.com';
+const WHATSAPP_DEFAULT='59177748285', ADMIN_EMAIL='rufranz.chiqui28@gmail.com';
 const $=s=>document.querySelector(s), money=n=>'Bs '+Number(n||0).toFixed(2).replace('.',',');
 const CFG=window.SCAR3D_SUPABASE;
 let db=null, products=[], categories=[], contacts={phone:WHATSAPP_DEFAULT,email:ADMIN_EMAIL,address:'La Paz - El Alto, Bolivia',social:''};

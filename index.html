@@ -36,7 +36,7 @@
 
 <section id="administracion"><div class="wrap"><div class="head"><div><div class="eyebrow">Acceso restringido</div><h2>Administración SCAR 3D</h2><p class="muted">Solo el administrador debe gestionar publicaciones y datos de contacto.</p></div></div>
 <div class="notice">Prototipo: los cambios se guardan en este navegador. Para que la administración sea realmente privada y los productos se sincronicen para todos los clientes, falta conectar una base de datos y autenticación segura antes de publicar en Internet.</div>
-<div id="loginBox" class="panel" style="max-width:520px"><h3>Ingreso de administrador</h3><div class="field"><label>Correo administrador</label><input id="adminEmail" type="email" value="rufranz.chiqui@gmail.com" autocomplete="username"></div><div class="field"><label>Contraseña</label><input id="adminPass" type="password" placeholder="Contraseña de tu cuenta Supabase" autocomplete="current-password"></div><button id="loginBtn" class="btn primary">Ingresar de forma segura</button><p class="tiny">El acceso se habilitará al conectar el proyecto Supabase. Solo se autoriza el correo administrador configurado en la base de datos.</p></div>
+<div id="loginBox" class="panel" style="max-width:520px"><h3>Ingreso de administrador</h3><div class="field"><label>Correo administrador</label><input id="adminEmail" type="email" value="rufranz.chiqui28@gmail.com" autocomplete="username"></div><div class="field"><label>Contraseña</label><input id="adminPass" type="password" placeholder="Contraseña de tu cuenta Supabase" autocomplete="current-password"></div><button id="loginBtn" class="btn primary">Ingresar de forma segura</button><p class="tiny">El acceso se habilitará al conectar el proyecto Supabase. Solo se autoriza el correo administrador configurado en la base de datos.</p></div>
 <div id="adminPanel" class="hidden">
 <div class="two">
 <div class="panel"><h3 id="formTitle">Publicar nuevo producto</h3><input id="editId" type="hidden">
@@ -62,7 +62,7 @@
 <div id="cartModal" class="modal-bg hidden"><div class="modal"><div class="modal-head"><h2>Detalle de tu pedido</h2><button id="cartClose" class="btn secondary">Cerrar</button></div><div id="cartLines" class="cart-lines"></div><div style="display:flex;justify-content:space-between;align-items:center;margin:20px 0"><b>Total estimado</b><span id="cartTotal" class="total">Bs 0,00</span></div><p class="tiny">El total es referencial. El envío y productos personalizados pueden requerir confirmación.</p><div class="field"><label>Nombre del cliente</label><input id="buyerName" placeholder="Tu nombre"></div><div class="field"><label>Observaciones (opcional)</label><textarea id="buyerNote" placeholder="Color, tamaño, entrega..."></textarea></div><button id="checkout" class="btn primary">Enviar pedido completo por WhatsApp</button></div></div>
 <div id="toast" class="toast"></div>
 <script>
-const WHATSAPP_DEFAULT='59177748285'; const ADMIN_EMAIL='rufranz.chiqui@gmail.com'; const $=s=>document.querySelector(s), money=n=>'Bs '+Number(n||0).toFixed(2).replace('.',',');
+const WHATSAPP_DEFAULT='59177748285'; const ADMIN_EMAIL='rufranz.chiqui28@gmail.com'; const $=s=>document.querySelector(s), money=n=>'Bs '+Number(n||0).toFixed(2).replace('.',',');
 const starter=[
 {id:1,name:'Dragón articulado',cat:'Figuras y juguetes',price:65,icon:'🐉',desc:'Figura articulada y flexible. Disponible en distintos colores.',images:[]},
 {id:2,name:'Llavero personalizado',cat:'Llaveros',price:15,icon:'🔑',desc:'Añade un nombre, iniciales o diseño especial.',images:[]},

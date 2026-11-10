@@ -1,7 +1,6 @@
-// Copia estos valores desde Supabase > Project Settings > API.
-// La anon/publishable key puede estar en el frontend SIEMPRE que RLS esté habilitado.
-// NUNCA pegues aquí la service_role key ni contraseñas.
+
+// Configuración de conexión de SCAR 3D con Supabase
 window.SCAR3D_SUPABASE = {
-  url: "https://thbjvglexvhdittqkds.supabase.co",
+  url: "https://thbjivglexvhdittqkds.supabase.co",
   anonKey: "sb_publishable_7vRhVoQqLedkVDe5b2i5nQ_WQCQVY93"
 };
